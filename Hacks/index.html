@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ravyn</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</header>
 <body>
-    <header>
-        <div class="container">
-            <a href="#">HI</a>
+    <section class="navbar">
+        
+        <div class="container" id="cont">
+
+            <img src="images/Group 1.png" alt="Menu icon" class="menu-btn" id="btn" onclick="Gayaab()">
+            <div class="menu-click"  onclick="Gayaab()" id="Sad-life">
+                <!-- <ul>
+                    <li id="l">Municipal-Complaint</li>
+                    <li id="e" >Register</li>    
+                    <li id="p">Log In</li>    
+                    <li id="m">Sign Up</li>    
+                </ul> -->
+
+            
+                    <a href="#" id="l">Municipal-Complaint</a>
+                    <a href="#" id="e" >Register</a>    
+                    <a href="#" id="p">Log In</a>    
+                    <a href="#" id="m">Sign Up</a>    
+                
+            </div>
         </div>
-    </header>
+    </section>
 </body>
 </html>
+<script>
+    function Gayaab(){
+        document.getElementById("btn").style.display = "none";
+        document.getElementById("cont").style.padding = "75% 150px";
+        document.getElementById("cont").style.transition = "padding 0.8s ease";
+        document.getElementById("l").style.visibility = "visible";
+        document.getElementById("e").style.visibility = "visible";
+        document.getElementById("p").style.visibility = "visible";
+        document.getElementById("m").style.visibility = "visible";
+    }
+</script>
