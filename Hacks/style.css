@@ -4,7 +4,7 @@
     width: 40px;
     height: 50%;
     padding: 75% 30px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 body{
     background-image:linear-gradient(-270deg,#352754,#203a43,#2c5364,#2a6c60,#2f884f,#34cd6b);
@@ -49,7 +49,20 @@ a{
     list-style: none; 
     visibility: hidden;
 }
-
-
- 
-
+.cross{
+    display:block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:65em;
+    left:5em;
+    visibility: hidden;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.cross:hover{
+    width: 55px;
+    opacity:1;
+    transition: opacity 0.75s;
+    transition: width 0.75s;
+} 
