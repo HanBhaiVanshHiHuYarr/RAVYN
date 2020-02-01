@@ -11,7 +11,7 @@
     <section class="navbar">
         
         <div class="container" id="cont">
-
+            <img src="images/Cross.png" alt="" id="crs" onclick="Aagya()" class="cross" >
             <img src="images/Group 1.png" alt="Menu icon" class="menu-btn" id="btn" onclick="Gayaab()">
             <div class="menu-click"  onclick="Gayaab()" id="Sad-life">
                 <!-- <ul>
@@ -34,12 +34,25 @@
 </html>
 <script>
     function Gayaab(){
-        document.getElementById("btn").style.display = "none";
+        document.getElementById("crs").style.visibility = "visible";
+        
+        document.getElementById("btn").style.visibility = "hidden";
         document.getElementById("cont").style.padding = "75% 150px";
         document.getElementById("cont").style.transition = "padding 0.8s ease";
         document.getElementById("l").style.visibility = "visible";
         document.getElementById("e").style.visibility = "visible";
         document.getElementById("p").style.visibility = "visible";
         document.getElementById("m").style.visibility = "visible";
+    }
+    function Aagya(){
+        document.getElementById("cont").style.padding = "75% 30px";
+        document.getElementById("cont").style.transition = "padding 0.8s ease";
+        document.getElementById("l").style.visibility = "hidden";
+        document.getElementById("e").style.visibility = "hidden";
+        document.getElementById("p").style.visibility = "hidden";
+        document.getElementById("m").style.visibility = "hidden";
+        document.getElementById("crs").style.visibility = "hidden";
+        document.getElementById("crs").style.visibility = "hidden";
+        document.getElementById("btn").style.visibility = "visible";
     }
 </script>
